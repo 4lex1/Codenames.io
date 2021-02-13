@@ -1,0 +1,65 @@
+﻿@page
+@model Codenames.Pages.GameModel
+@{
+}
+
+<div class="row">
+    <div class="col-sm-2 team-column-red">
+        <h1>Equipe rouge</h1>
+
+        <ul id="ul-redTeam">
+        </ul>
+
+        <p id="red-wordsLeft"></p>
+    </div>
+
+    <div class="col">
+        <div class="row text-center">
+            <h2 class="hidden" style="color:blue" id="h2-blueRound">Au tour des bleus !</h2>
+            <h2 class="hidden" style="color:red" id="h2-redRound">Au tour des rouges !</h2>
+            <h1 id="h1-gameOver"></h1>
+        </div>
+
+        @{
+            int count = 0;
+            for (int i = 0; i < 5; ++i)
+            {
+                {
+                    <div class="row">
+                        @for (int j = 0; j < 5; ++j)
+                        {
+                            <div class="col">
+                                <div class="c-card codename-card-hidden" id="card-@count">
+                                    <div class="codename-card-text" id="card-text-@count"></div>
+                                </div>
+                            </div>
+                            { ++count; }
+                        }
+                    </div>
+                }
+            }
+        }
+
+        <br /><br />
+        <div class="text-center">
+            <button class="btn btn-success" id="btn-nextRound">Fin du tour</button>
+            <br /><br />
+            <button class="btn btn-danger hidden" id="btn-newGame">Nouvelle partie</button>
+        </div>
+
+
+    </div>
+
+    <div class="col-sm-2 team-column-blue">
+        <h1>Equipe bleue</h1>
+
+        <ul id="ul-blueTeam">
+        </ul>
+
+        <p id="blue-wordsLeft"></p>
+    </div>
+
+</div>
+
+<script src="~/microsoft/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/js/game.js"></script>

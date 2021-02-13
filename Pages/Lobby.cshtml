@@ -1,0 +1,41 @@
+﻿@page
+@model Codenames.Pages.LobbyModel
+@{
+}
+
+<div class="container">
+    <div class="form-group" id="inputGrp-playerName">
+        <label>Ton pseudo</label>
+        <input type="text" class="form-control" id="input-playerName" />
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h1>Equipe rouge</h1>
+
+            <ul id="ul-redteam">
+            </ul>
+
+            <button class="btn btn-danger" id="btn-redJoin">Rejoindre</button>
+            <button class="btn btn-danger hidden" id="btn-redLeave">Quitter</button>
+        </div>
+
+        <div class="col">
+            <h1>Equipe bleue</h1>
+
+            <ul id="ul-blueteam">
+            </ul>
+
+            <button class="btn btn-primary" id="btn-blueJoin">Rejoindre</button>
+            <button class="btn btn-primary hidden" id="btn-blueLeave">Quitter</button>
+        </div>
+    </div>
+
+    <br /><br />
+    <div class="form-group">
+        <button class="btn btn-success hidden" id="btn-startGame">C'est parti !</button>
+    </div>
+</div>
+
+<script src="~/microsoft/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/js/lobby.js"></script>

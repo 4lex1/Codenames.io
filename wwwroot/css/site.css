@@ -1,0 +1,156 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.codename-card {
+    background-color: #f0e1c2;
+    border-radius: 12px;
+    height: 5em;
+    margin: 0.4em;
+    text-align:center;
+    cursor:pointer;
+    transition-duration: 0.5s;
+    opacity:1;
+    transform: scaleY(1);
+}
+
+    .codename-card:hover {
+        transform: scale(1.1);
+    }
+
+.codename-card-animate {
+    background-color:yellow !important;
+    transform: scaleY(-1) !important;
+}
+
+.codename-card-hidden {
+    opacity: 0;
+    transform: scaleY(-2);
+}
+
+.codename-card-text{
+    background-color: white;
+    transform: translate(0,2.5em);
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 0 0 8px 8px;
+    font-weight:bolder;
+}
+
+.team-column-blue {
+    text-align: center;
+    color: blue;
+}
+
+.team-column-red {
+    text-align:center;
+    color: red;
+}
+
+.hidden{
+    display:none;
+}
+
+.red{
+    background-color:red;
+}
+
+.red-text{
+    color:red;
+}
+
+.blue{
+    background-color:blue;
+}
+.blue-text {
+    color: blue;
+}
+
+.black{
+    background-color:black;
+}
+
+.redPlayed{
+    background-color:#ff856f;
+}
+
+.bluePlayed{
+    background-color:#5d92ff;
+}
+
+.whitePlayed{
+    background-color:#d4d4d4 !important;
+}
+
+.blackPlayed {
+    background-color: #222222 !important;
+}
+
